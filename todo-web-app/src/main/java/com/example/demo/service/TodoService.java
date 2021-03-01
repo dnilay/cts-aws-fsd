@@ -7,11 +7,19 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.example.demo.dao.TodoDao;
 import com.example.demo.model.Todo;
 
 @Service
 public class TodoService {
-    private static List<Todo> todos = new ArrayList<Todo>();
+	
+	private TodoDao todoDao;
+	
+    public TodoService(TodoDao todoDao) {
+		super();
+		this.todoDao = todoDao;
+	}
+	private static List<Todo> todos = new ArrayList<Todo>();
     private static int todoCount = 3;
 
     static {
@@ -24,11 +32,12 @@ public class TodoService {
 
     public List<Todo> retrieveTodos(String user) {
         List<Todo> filteredTodos = new ArrayList<Todo>();
-        for (Todo todo : todos) {
-            if (todo.getUser().equals(user)) {
-                filteredTodos.add(todo);
-            }
-        }
+		/*
+		 * for (Todo todo : todos) { if (todo.getUser().equals(user)) {
+		 * filteredTodos.add(todo); } }
+		 */
+        filteredTodos=todoDao.findAll();
+        
         return filteredTodos;
     }
     public Todo retrieveTodo(int id) {
