@@ -1,0 +1,120 @@
+src/main/java/com/example/demo/EmployeeDemoApplication.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/EmployeeDemoApplication.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/EmployeeDemoApplication.java:7:	UseUtilityClass:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/example/demo/EmployeeDemoApplication.java:7:	UseUtilityClass:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/example/demo/EmployeeDemoApplication.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/EmployeeDemoApplication.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/EmployeeDemoApplication.java:9:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/example/demo/EmployeeDemoApplication.java:9:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:19:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/demo/controller/CustomerController.java:19:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/demo/controller/CustomerController.java:19:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:19:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:23:	BeanMembersShouldSerialize:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/example/demo/controller/CustomerController.java:23:	BeanMembersShouldSerialize:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/example/demo/controller/CustomerController.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:26:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:26:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theModel' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theModel' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:29:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'theCustomers' could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:29:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'theCustomers' could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:38:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:38:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:38:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theModel' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:38:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theModel' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:41:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'theCustomer' could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:41:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'theCustomer' could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:49:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:49:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:49:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theCustomer' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:49:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theCustomer' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:58:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:58:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:58:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theId' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:58:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theId' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:59:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theModel' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:59:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theModel' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:62:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'theCustomer' could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:62:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'theCustomer' could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:72:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:72:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/controller/CustomerController.java:72:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theId' is not assigned and could be declared final
+src/main/java/com/example/demo/controller/CustomerController.java:72:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theId' is not assigned and could be declared final
+src/main/java/com/example/demo/dao/CustomerDAO.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/dao/CustomerDAO.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/dao/CustomerDAO.java:9:	CommentSize:	CommentSize: Comment is too large: Too many lines
+src/main/java/com/example/demo/dao/CustomerDAO.java:9:	CommentSize:	CommentSize: Comment is too large: Too many lines
+src/main/java/com/example/demo/entity/Customer.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/entity/Customer.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/entity/Customer.java:12:	DataClass:	DataClass: The class 'Customer' is suspected to be a Data Class (WOC=10.000%, NOPA=0, NOAM=8, WMC=10)
+src/main/java/com/example/demo/entity/Customer.java:12:	DataClass:	DataClass: The class 'Customer' is suspected to be a Data Class (WOC=10.000%, NOPA=0, NOAM=8, WMC=10)
+src/main/java/com/example/demo/entity/Customer.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/entity/Customer.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/entity/Customer.java:17:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/demo/entity/Customer.java:17:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/demo/entity/Customer.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/entity/Customer.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/entity/Customer.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/entity/Customer.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/entity/Customer.java:26:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/entity/Customer.java:26:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/entity/Customer.java:28:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/entity/Customer.java:28:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/entity/Customer.java:28:	UncommentedEmptyConstructor:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/example/demo/entity/Customer.java:28:	UncommentedEmptyConstructor:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/example/demo/entity/Customer.java:28:	UnnecessaryConstructor:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/com/example/demo/entity/Customer.java:28:	UnnecessaryConstructor:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/com/example/demo/entity/Customer.java:36:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/demo/entity/Customer.java:36:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/demo/entity/Customer.java:36:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/demo/entity/Customer.java:36:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/demo/entity/Customer.java:44:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'firstName' is not assigned and could be declared final
+src/main/java/com/example/demo/entity/Customer.java:44:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'firstName' is not assigned and could be declared final
+src/main/java/com/example/demo/entity/Customer.java:52:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'lastName' is not assigned and could be declared final
+src/main/java/com/example/demo/entity/Customer.java:52:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'lastName' is not assigned and could be declared final
+src/main/java/com/example/demo/entity/Customer.java:60:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'email' is not assigned and could be declared final
+src/main/java/com/example/demo/entity/Customer.java:60:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'email' is not assigned and could be declared final
+src/main/java/com/example/demo/service/CustomerService.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/service/CustomerService.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/service/CustomerService.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/service/CustomerService.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/service/CustomerService.java:9:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getCustomers': the method is declared in an interface type
+src/main/java/com/example/demo/service/CustomerService.java:9:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getCustomers': the method is declared in an interface type
+src/main/java/com/example/demo/service/CustomerService.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/service/CustomerService.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/service/CustomerService.java:11:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'saveCustomer': the method is declared in an interface type
+src/main/java/com/example/demo/service/CustomerService.java:11:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'saveCustomer': the method is declared in an interface type
+src/main/java/com/example/demo/service/CustomerService.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/service/CustomerService.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/service/CustomerService.java:13:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getCustomer': the method is declared in an interface type
+src/main/java/com/example/demo/service/CustomerService.java:13:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getCustomer': the method is declared in an interface type
+src/main/java/com/example/demo/service/CustomerService.java:15:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/service/CustomerService.java:15:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/demo/service/CustomerService.java:15:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'deleteCustomer': the method is declared in an interface type
+src/main/java/com/example/demo/service/CustomerService.java:15:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'deleteCustomer': the method is declared in an interface type
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:13:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:13:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:13:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:13:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:17:	BeanMembersShouldSerialize:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:17:	BeanMembersShouldSerialize:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theCustomer' is not assigned and could be declared final
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theCustomer' is not assigned and could be declared final
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theId' is not assigned and could be declared final
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theId' is not assigned and could be declared final
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:42:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theId' is not assigned and could be declared final
+src/main/java/com/example/demo/service/CustomerServiceImpl.java:42:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'theId' is not assigned and could be declared final
+src/test/java/com/example/demo/EmployeeDemoApplicationTests.java:7:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/demo/EmployeeDemoApplicationTests.java:7:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/demo/EmployeeDemoApplicationTests.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/example/demo/EmployeeDemoApplicationTests.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/example/demo/EmployeeDemoApplicationTests.java:10:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the contextLoads method if you want a default access modifier
+src/test/java/com/example/demo/EmployeeDemoApplicationTests.java:10:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the contextLoads method if you want a default access modifier
+src/test/java/com/example/demo/EmployeeDemoApplicationTests.java:10:	JUnitTestsShouldIncludeAssert:	JUnitTestsShouldIncludeAssert: JUnit tests should include assert() or fail()
+src/test/java/com/example/demo/EmployeeDemoApplicationTests.java:10:	JUnitTestsShouldIncludeAssert:	JUnitTestsShouldIncludeAssert: JUnit tests should include assert() or fail()
+src/test/java/com/example/demo/EmployeeDemoApplicationTests.java:10:	UncommentedEmptyMethodBody:	UncommentedEmptyMethodBody: Document empty method body
+src/test/java/com/example/demo/EmployeeDemoApplicationTests.java:10:	UncommentedEmptyMethodBody:	UncommentedEmptyMethodBody: Document empty method body

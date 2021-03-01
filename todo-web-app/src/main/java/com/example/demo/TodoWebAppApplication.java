@@ -1,25 +1,23 @@
 package com.example.demo;
 
-import java.util.Date;
-
-import org.springframework.boot.CommandLineRunner;
+import org.slf4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.example.demo.dao.TodoDao;
-import com.example.demo.model.Todo;
 
 @SpringBootApplication
 public class TodoWebAppApplication /*implements CommandLineRunner*/ {
 
 	private TodoDao todoDao;
-	
+	private static Logger logger=org.slf4j.LoggerFactory.getLogger(TodoWebAppApplication.class);
 	public TodoWebAppApplication(TodoDao todoDao) {
 		super();
 		this.todoDao = todoDao;
 	}
 
 	public static void main(String[] args) {
+		logger.debug("debiging TodoWebapp");
 		SpringApplication.run(TodoWebAppApplication.class, args);
 	}
 

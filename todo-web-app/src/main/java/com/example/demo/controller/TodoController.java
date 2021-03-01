@@ -15,13 +15,15 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.example.demo.model.Todo;
 import com.example.demo.service.TodoService;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 @Controller
 @SessionAttributes("name")
 public class TodoController {
 
 	private TodoService service;
 
+	private Logger logger=LoggerFactory.getLogger(TodoController.class);
 	public TodoController(TodoService service) {
 		super();
 		this.service = service;
@@ -36,6 +38,7 @@ public class TodoController {
 
 	@RequestMapping(value = "/list-todos", method = RequestMethod.GET)
 	public String showTodos(ModelMap model) {
+		logger.info("within list-todos");
 		String name = (String) model.get("name");
 		model.put("todos", service.retrieveTodos(name));
 		return "list-todos";
@@ -43,12 +46,14 @@ public class TodoController {
 
 	@RequestMapping(value = "/add-todo", method = RequestMethod.GET)
 	public String showAddTodoPage(Model model) {
+		logger.error("error occured");
 		model.addAttribute("todo", new Todo(0, "Default name", "Default Desc", new Date(), false));
 		return "todo";
 	}
 
 	@RequestMapping(value = "/delete-todo", method = RequestMethod.GET)
 	public String deleteTodo(@RequestParam int id) {
+		logger.info("within delete todos");
 		service.deleteTodo(id);
 		return "redirect:/list-todos";
 	}
