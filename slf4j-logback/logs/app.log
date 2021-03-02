@@ -1,0 +1,6 @@
+2021-03-02 14:30:40,757 DEBUG com.mkyong.HelloWorld [main] Hello from Logback
+2021-03-02 14:30:40,776 DEBUG com.mkyong.HelloWorld [main] getNumber() : 5
+2021-03-02 14:31:33,663 ERROR com.mkyong.HelloWorldError [main] {}
+java.lang.IllegalArgumentException: Sorry IllegalArgumentException!
+	at com.mkyong.HelloWorldError.getData(HelloWorldError.java:21)
+	at com.mkyong.HelloWorldError.main(HelloWorldError.java:13)
