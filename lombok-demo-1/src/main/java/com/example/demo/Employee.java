@@ -1,22 +1,17 @@
 package com.example.demo;
 
 import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
+import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.NonNull;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
-@ToString
-@EqualsAndHashCode
-//@RequiredArgsConstructor
+@Builder
 public class Employee {
-	
+	@NonNull
 	private String employeeId;
 	private String firstName;
 	private String lastName;
