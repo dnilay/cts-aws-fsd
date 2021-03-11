@@ -1,14 +1,19 @@
 package com.example.demo.rest;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.error.StudentErrorResponse;
+import com.example.demo.error.StudentNotFoundException;
 import com.example.demo.model.Student;
 import com.example.demo.service.StudentService;
 
@@ -22,6 +27,16 @@ public class StudentController {
 		this.studentService = studentService;
 	}
 	
+	@ExceptionHandler
+	public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException studentNotFoundException)
+	{
+		StudentErrorResponse studentErrorResponse=new StudentErrorResponse();
+		studentErrorResponse.setStatus(HttpStatus.NOT_FOUND.value());
+		studentErrorResponse.setMessage(studentNotFoundException.getMessage());
+		studentErrorResponse.setTimeStamp(new Date());
+		return new ResponseEntity<StudentErrorResponse>(studentErrorResponse,HttpStatus.NOT_FOUND);
+	}
+	
 	@GetMapping(path = "/students")
 	public ResponseEntity<List<Student>> getAllStudents()
 	{
@@ -29,16 +44,14 @@ public class StudentController {
 	}
 	
 	@GetMapping(path = "/students/{studentId}")
-	public ResponseEntity<Optional<Student>> getStudentByid(@PathVariable("studentId") Integer studentId) throws StudentNotFoundException
+	public ResponseEntity<Student> getStudentByid(@PathVariable("studentId") Integer studentId) throws StudentNotFoundException
 	{
-		Optional<Student> student=Optional.of(studentService.getStudentById(studentId));
-		System.out.println(student);
-		if(student.get()==null)
+		Student student=studentService.getStudentById(studentId);
+		if(student==null)
 		{
-			System.out.println("------------hello--------");
-			throw new StudentNotFoundException("student not fount with id: "+studentId); 
+			throw new StudentNotFoundException("student not found with id: "+studentId); 
 		}
-		return ResponseEntity.ok().body(Optional.of(studentService.getStudentById(studentId)));
+		return ResponseEntity.ok().body((studentService.getStudentById(studentId)));
 	}
 
 	
