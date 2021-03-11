@@ -34,8 +34,15 @@ public class StudentDatabaseServiceImpl implements StudentDatabaseService {
 	@Transactional
 	@Override
 	public Optional<Student> getStudentById(Integer studentId) {
-		// TODO Auto-generated method stub
 		return studentRepo.findById(studentId);
+		
+	}
+
+	@Override
+	@Transactional
+	public Student createStudent(Student student) {
+		// TODO Auto-generated method stub
+		return studentRepo.save(student);
 	}
 
 }

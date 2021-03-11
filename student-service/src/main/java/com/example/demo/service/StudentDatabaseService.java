@@ -9,4 +9,6 @@ public interface StudentDatabaseService {
 
 	public List<Student> getAllStudents();
 	public Optional<Student> getStudentById(Integer studentId);
+	
+	public Student createStudent(Student student);
 }
