@@ -27,15 +27,16 @@ public class StudentController {
 		this.studentService = studentService;
 	}
 	
-	@ExceptionHandler
-	public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException studentNotFoundException)
-	{
-		StudentErrorResponse studentErrorResponse=new StudentErrorResponse();
-		studentErrorResponse.setStatus(HttpStatus.NOT_FOUND.value());
-		studentErrorResponse.setMessage(studentNotFoundException.getMessage());
-		studentErrorResponse.setTimeStamp(new Date());
-		return new ResponseEntity<StudentErrorResponse>(studentErrorResponse,HttpStatus.NOT_FOUND);
-	}
+	/*
+	 * @ExceptionHandler public ResponseEntity<StudentErrorResponse>
+	 * handleException(StudentNotFoundException studentNotFoundException) {
+	 * StudentErrorResponse studentErrorResponse=new StudentErrorResponse();
+	 * studentErrorResponse.setStatus(HttpStatus.NOT_FOUND.value());
+	 * studentErrorResponse.setMessage(studentNotFoundException.getMessage());
+	 * studentErrorResponse.setTimeStamp(new Date()); return new
+	 * ResponseEntity<StudentErrorResponse>(studentErrorResponse,HttpStatus.
+	 * NOT_FOUND); }
+	 */
 	
 	@GetMapping(path = "/students")
 	public ResponseEntity<List<Student>> getAllStudents()
