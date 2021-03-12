@@ -2,8 +2,6 @@ package com.example.demo.ui.controller;
 
 import java.util.UUID;
 
-import javax.validation.Valid;
-
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,15 +39,16 @@ public class UserController {
 			path = "/users"
 			)
 
-	public ResponseEntity<String> createUser(@Validated @Valid @RequestBody CreateUserRequestModel userDetails)
+	public ResponseEntity<String> createUser(@Validated @RequestBody CreateUserRequestModel userDetails)
 	{
 		
 		ModelMapper modelMapper=new ModelMapper();
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 		UserDto dto=modelMapper.map(userDetails, UserDto.class);
 		dto.setUserId(UUID.randomUUID().toString());
-		userService.createUser(dto);
-		return new ResponseEntity<String>("post method called on port number: "+env.getProperty("local.server.port"),HttpStatus.OK);
+		UserDto tempDto=userService.createUser(dto);
+		//return new ResponseEntity<String>("post method called on port number: "+env.getProperty("local.server.port"),HttpStatus.OK);
+		return ResponseEntity.status(HttpStatus.CREATED).body("user created sucessfully");
 	}
 
 }
