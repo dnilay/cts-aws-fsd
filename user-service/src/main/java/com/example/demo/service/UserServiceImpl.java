@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
+import java.util.UUID;
+
 import javax.transaction.Transactional;
 
 import org.modelmapper.ModelMapper;
@@ -27,14 +29,21 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	@Transactional
-	public UserDto createUser(UserDto dto) {
-		// TODO Auto-generated method stub
-		ModelMapper modelMapper=new ModelMapper();
+	public UserDto createUser(UserDto userDetails) {
+		userDetails.setUserId(UUID.randomUUID().toString());
+		userDetails.setEncryptedPassword(bCryptPasswordEncoder.encode(userDetails.getPassword()));
+		
+		ModelMapper modelMapper = new ModelMapper(); 
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
-		UserEntity entity=modelMapper.map(dto, UserEntity.class);
-		entity.setEncryptedPassword(bCryptPasswordEncoder.encode(dto.getPassword()));
-		userRepository.save(entity);
-		return dto;
+		
+		UserEntity userEntity = modelMapper.map(userDetails, UserEntity.class);
+
+		UserEntity entity=userRepository.save(userEntity);
+		
+		UserDto returnValue = modelMapper.map(entity, UserDto.class);
+ 
+		return returnValue;
+
 	}
 
 }

@@ -1,7 +1,5 @@
 package com.example.demo.ui.controller;
 
-import java.util.UUID;
-
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.service.UserService;
 import com.example.demo.shared.UserDto;
 import com.example.demo.ui.model.CreateUserRequestModel;
+import com.example.demo.ui.model.CreateUserResponseModel;
 
 @RestController
 @RequestMapping("/api")
@@ -27,28 +26,32 @@ public class UserController {
 	
 	@Autowired
 	public UserController(Environment env,UserService userService) {
-		super();
 		this.env = env;
 		this.userService=userService;
 	}
 
 
 	@PostMapping(
-			consumes = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE },
-			produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE },
+			consumes = {MediaType.APPLICATION_JSON_VALUE },
+			produces = {MediaType.APPLICATION_JSON_VALUE },
 			path = "/users"
 			)
 
-	public ResponseEntity<String> createUser(@Validated @RequestBody CreateUserRequestModel userDetails)
+	public ResponseEntity<CreateUserResponseModel> createUser(@Validated @RequestBody CreateUserRequestModel userDetails)
 	{
 		
-		ModelMapper modelMapper=new ModelMapper();
+		ModelMapper modelMapper = new ModelMapper(); 
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
-		UserDto dto=modelMapper.map(userDetails, UserDto.class);
-		dto.setUserId(UUID.randomUUID().toString());
-		UserDto tempDto=userService.createUser(dto);
-		//return new ResponseEntity<String>("post method called on port number: "+env.getProperty("local.server.port"),HttpStatus.OK);
-		return ResponseEntity.status(HttpStatus.CREATED).body("user created sucessfully");
+		
+		UserDto userDto = modelMapper.map(userDetails, UserDto.class);
+		
+		UserDto createdUser = userService.createUser(userDto);
+		System.out.println(createdUser);
+		CreateUserResponseModel returnValue = modelMapper.map(createdUser, CreateUserResponseModel.class);
+		
+		return ResponseEntity.status(HttpStatus.CREATED).body(returnValue);
+
+		
 	}
 
 }
